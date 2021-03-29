@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "habitt"
+version = "0.1.0"
+description = "Form long-lasting habitt"
+authors = ["Harshit Singhai <harshitsinghai77@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.63.0"
+uvicorn = {extras = ["standard"], version = "^0.13.3"}
+python-environ = "^0.4.54"
+python-jose = {extras = ["cryptography"], version = "^3.2.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+pydantic = {extras = ["email"], version = "^1.8"}
+psycopg2 = "^2.8.6"
+databases = {extras = ["postgresql"], version = "^0.4.3"}
+
+[tool.poetry.dev-dependencies]
+black = "^20.8b1"
+isort = "^5.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

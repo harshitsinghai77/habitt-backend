@@ -1,0 +1,10 @@
+version: "3"
+services:
+  postgresql:
+    image: "habitt/postgresql"
+    environment:
+      POSTGRES_DB: "habitt"
+      POSTGRES_USER: "habitt"
+      POSTGRES_PASSWORD: "password"
+    ports:
+      - "5436:5432"
